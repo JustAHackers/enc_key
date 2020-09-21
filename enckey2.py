@@ -45,7 +45,7 @@ def decrypt(text,key):
 #    camo2 = base64.b64encode(hasher("camo2",7,key))
 #    text = text.replace(camo,"",1).replace(camo2,"",1)
     textsplit = text.split("!-!")
-    print text
+#    print text
     encrypted,shuffled,hash_length,separate_length = textsplit[0].split("|")
     encrypted = separator(encrypted,int(hash_length))
     encrypted2 = separator("".join(encrypted),int(hash_length))
